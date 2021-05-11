@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto&display=swap');
+.body{
+    margin: 0px;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container img{
+    width: 3em;
+}
+.logo-container div{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(153, 53, 86);
+}
+
+.main-container{
+    min-height: 100vh;
+    width: 100%;
+    background-color:  rgba(214, 197, 139, 0.993);
+}
+.list-menu{
+    background-color: rgba(153, 53, 86, 0.699);
+    position: fixed;
+    top: 4em;
+    right: 0px;
+    text-align:center;
+    height: 100vh;
+    width: 40%;
+    border-radius: 10px 0px 0px 0px;
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.list-menu li{
+    list-style: none;
+    margin-top: 2em;
+}
+.list-menu li a{
+    color:seashell;
+}
+
+.active-menu{
+    transform: translateX(0%);
+}
+
+@media screen and (min-width:720px) and (orientation:landscape)
+{
+    .main-container{
+        background-image: none;
+    }
+    .bg-container{
+        width:100%;
+        display: flex;
+        flex-direction:row;
+    }
+    .logo-container{
+        width: 50%;
+        height: 100vh;
+        background-image: url(../img/original.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .logo-bg{
+        width: 100%;
+        height: 100%;
+        background-color:rgba(224, 207, 151, 0.901) ;
+    }
+    .logo{
+        width: 25em;
+    }
+    .logo-title{
+        font-size: 6em;
+    }
+    .form-container{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(214, 197, 139, 0.993);
+    }
+    .sesion-title{
+        display: block;
+        color:rgb(82, 74, 74);
+        font-size: 3em;
+        margin-bottom: 2em;
+    }
+    .form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login-btn{
+        margin-top: 2em;
+        width: 40%;
+        background-color: rgb(153, 53, 86);
+        color:rgba(224, 207, 151, 0.901);
+    }
+    .input-container{
+        width: 100%;
+        margin-top: 2em;
+    }
+    .sung-link{
+        font-size: 1em;
+    }
+ }

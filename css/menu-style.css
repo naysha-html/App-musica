@@ -3,6 +3,7 @@
     margin: 0px;
 }
 .menu-container{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,6 +25,9 @@
     min-height: 100vh;
     width: 100%;
     background-color:  rgba(214, 197, 139, 0.993);
+    display: flex;
+    flex-direction: column;
+    align-items: centers;
 }
 .list-menu{
     background-color: rgba(153, 53, 86, 0.699);
@@ -32,9 +36,9 @@
     right: 0px;
     text-align:center;
     height: 100vh;
-    width: 40%;
+    width: 50%;
     border-radius: 10px 0px 0px 0px;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all 2s;
 }
 .list-menu li{
@@ -50,65 +54,30 @@
 }
 
 @media screen and (min-width:720px) and (orientation:landscape)
-{
-    .main-container{
-        background-image: none;
+{    
+    #menu-btn{
+        display: none;
     }
-    .bg-container{
-        width:100%;
-        display: flex;
-        flex-direction:row;
-    }
-    .logo-container{
-        width: 50%;
-        height: 100vh;
-        background-image: url(../img/original.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    .logo-bg{
+    .list-menu{
+        transform: translateX(0%);
+        position: static;
         width: 100%;
-        height: 100%;
-        background-color:rgba(224, 207, 151, 0.901) ;
-    }
-    .logo{
-        width: 25em;
-    }
-    .logo-title{
-        font-size: 6em;
-    }
-    .form-container{
-        width: 50%;
-        height: 100vh;
+        height: auto;
+        text-align: left;
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        background-color: rgba(214, 197, 139, 0.993);
+        padding: 0px;
+        margin: 0px;
     }
-    .sesion-title{
-        display: block;
-        color:rgb(82, 74, 74);
-        font-size: 3em;
-        margin-bottom: 2em;
+    .list-menu li{
+        margin-top: 0em;
     }
-    .form{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .list-menu li a img{
+        width: 3em;
     }
-    .login-btn{
-        margin-top: 2em;
-        width: 40%;
-        background-color: rgb(153, 53, 86);
-        color:rgba(224, 207, 151, 0.901);
+    .main-menu{
+        width: 25%;
     }
-    .input-container{
-        width: 100%;
-        margin-top: 2em;
-    }
-    .sung-link{
-        font-size: 1em;
-    }
- }
+}

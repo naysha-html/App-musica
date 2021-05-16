@@ -41,7 +41,7 @@
     align-items: center;
 }
 @media screen and (min-width:720px) and (orientation:landscape) 
- {
+{
     .main-container{
         background-image: none;
     }
@@ -102,4 +102,4 @@
     .sung-link{
         font-size: 1em;
     }
- }
+}
